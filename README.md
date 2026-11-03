@@ -7,7 +7,7 @@ The resulting cipher blocks are attached as binary lines onto a disk storage fil
 When an authorized medical staff member logs in, the script manifests a localized cryptographic handle using a protected key file (`secret.key`). 
 The runtime system loops through the binary storage blocks, puts in the cipher signature to decrypt the content back into cleartext, and puts the patient database back to the terminal screen.
 To satisfy the core security validation requirements, the application creates an append-only chronological logger saved inside `access_audit.log`.
-Every state machine transition including user registrations, successful authentications, failed login anomalies, record writes, or file read operations—is put in with a structured timestamp (`%Y-%m-%d %H:%M:%S`) and tied to the active operator's identity.
+Every state machine transition including user registrations, successful authentications, failed login anomalies, record writes, or file read operations is put in with a structured timestamp (`%Y-%m-%d %H:%M:%S`) and tied to the active operator's identity.
 Python 3.15+
 Standard Platform Modules: `hashlib`, `hmac`, `os`, `getpass`, `datetime`
 External Cryptographic Packages: `cryptography`
