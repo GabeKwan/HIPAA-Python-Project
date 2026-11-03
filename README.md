@@ -11,5 +11,5 @@ Every state machine transition—including user registrations, successful authen
 Python 3.15+
 Standard Platform Modules: `hashlib`, `hmac`, `os`, `getpass`, `datetime`
 External Cryptographic Packages: `cryptography`
- Make sure your local terminal has the required cryptographic library installed: pip install cryptography
+ Make sure your terminal has the required cryptographic library installed: pip install cryptography
  Execute the primary driver application layer:  python main.py
